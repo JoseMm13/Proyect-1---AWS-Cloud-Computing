@@ -146,6 +146,15 @@ El tráfico accede desde Internet a través del Internet Gateway, pasa por la su
 ### Diagrama
 
 ---
+## M1. DNS (Route 53)
+
+Se intentó crear una zona alojada privada denominada libreria.lab asociada a la VPC libreria-vpc. Sin embargo, el entorno AWS Academy Learner Lab devolvió el siguiente error de permisos:
+
+"You are not authorized to perform: ec2:DescribeVpcs"
+
+Debido a esta limitación del rol asignado por el laboratorio no fue posible completar la configuración de Route 53.
+
+---
 
 # Uso de IA
 
@@ -158,6 +167,12 @@ Para la realización de este proyecto se ha utilizado Microsoft Copilot como her
 ## Error detectado
 
 Durante el desarrollo del proyecto me equivoqué al crear la infraestructura. Inicialmente lancé una instancia EC2 sin configurar correctamente los datos de usuario y además creé recursos adicionales que no eran necesarios para completar el nivel básico del proyecto.
+
+Se intentó crear una zona alojada privada denominada libreria.lab asociada a la VPC libreria-vpc. Sin embargo, el entorno AWS Academy Learner Lab devolvió el siguiente error de permisos:
+
+   "You are not authorized to perform: ec2:DescribeVpcs"
+
+Debido a esta limitación del rol asignado por el laboratorio no fue posible completar la configuración de Route 53.
 
 ## Corrección realizada
 
@@ -172,5 +187,6 @@ Durante este proyecto se ha desplegado una infraestructura básica en AWS utiliz
 Se ha configurado una VPC personalizada, una instancia EC2 accesible desde Internet y un servidor web funcional. Además, se ha realizado una estimación económica mediante AWS Pricing Calculator y se ha documentado todo el proceso seguido.
 
 El proyecto ha permitido comprender el funcionamiento básico de una infraestructura en la nube, incluyendo redes, seguridad, despliegue de servidores web y estimación de costes.
+
 
 
